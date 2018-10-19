@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One');
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+
+}
+
+.hideScroll {
+    overflow-y: hidden;
+}
+
+label {
+    font-family: 'Open Sans';
+}
+
+.wrapper {
+
+    width: 100%;
+    background-color: black;
+    height: 1000px;
+    position: relative;
+}
+
+.info1 {
+    height: 100px;
+}
+
+
+.st0 {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+
+
+}
+
+.st1 {
+    fill: #F6B32E;
+
+}
+
+.st2 {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+
+}
+
+.move {
+    transform: translateX(27%);
+}
+
+.moveBack {
+    transform: translateX(27%);
+}
+
+
+
+.hideMe {
+    display: none;
+}
+
+.clickBox {
+    fill: transparent;
+    stroke: none;
+}
+
+
+
+@keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-flicker {
+    -webkit-animation: flickerAnimation 2s infinite;
+    -moz-animation: flickerAnimation 2s infinite;
+    -o-animation: flickerAnimation 2s infinite;
+    animation: flickerAnimation 2s infinite;
+}
+
+@keyframes move-across {
+    from {
+        transform: translateX(27%);
+    }
+
+    to {
+        transform: translateX(0.8%);
+    }
+}
+
+@-o-keyframes move-across {
+    from {
+        transform: translateX(27%);
+    }
+
+    to {
+        transform: translateX(0.8%);
+    }
+}
+
+@-moz-keyframes move-across {
+    from {
+        transform: translateX(27%);
+    }
+
+    to {
+        transform: translateX(0.8%);
+    }
+}
+
+@-webkit-keyframes move-across {
+    from {
+        transform: translateX(27%);
+    }
+
+    to {
+        transform: translateX(0.8%);
+    }
+}
+
+.moveAcross {
+    -webkit-animation: move-across 0.8s ease-in-out;
+    -moz-animation: move-across 0.8s ease-in-out;
+    -o-animation: move-across 0.8s ease-in-out;
+    animation: move-across 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveR {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(31.5%);
+    }
+}
+
+@-o-keyframes moveR {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(31.5%);
+    }
+}
+
+@-moz-keyframes moveR {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(31.5%);
+    }
+}
+
+@-webkit-keyframes moveR {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(31.5%);
+    }
+}
+
+.moveTogetherR {
+    -webkit-animation: moveR 1s ease-in-out;
+    -moz-animation: moveR 1s ease-in-out;
+    -o-animation: moveR 1s ease-in-out;
+    animation: moveR 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveL {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-31.5%);
+    }
+}
+
+@-o-keyframes moveL {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-31.5%);
+    }
+}
+
+@-moz-keyframes moveL {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-31.5%);
+    }
+}
+
+@-webkit-keyframes moveL {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-31.5%);
+    }
+}
+
+.moveTogetherL {
+    -webkit-animation: moveL 1s ease-in-out;
+    -moz-animation: moveL 1s ease-in-out;
+    -o-animation: moveL 1s ease-in-out;
+    animation: moveL 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+.title {
+    color: white;
+    font-size: 250px;
+    text-align: center;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.svgContainer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 350px;
+    margin-top: 200px;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+
+
+}
+
+.stick {
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+svg {
+    width: auto;
+    height: 100%;
+    padding: 0 33%;
+    z-index: 100;
+
+
+}
+
+.header {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+
+}
+
+.logOn {
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    margin-top: 50px;
+}
+
+.scrollBar {
+    position: fixed;
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    bottom: 0;
+
+}
+
+.scrollMe {
+    margin: 0 auto;
+    bottom: 0;
+
+}
+
+.slide {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transform: translateY(-200%);
+    -webkit-animation: disappear 1s;
+    -moz-animation: disappear 1s;
+    -o-animation: disappear 1s;
+    animation: disappear 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.hidethis {
+
+    -webkit-animation: disappear 1s;
+    -moz-animation: disappear 1s;
+    -o-animation: disappear 1s;
+    animation: disappear 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.lefty {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transform: translateY(100%);
+}
+
+.info {
+    background-color: white;
+    height: 100%;
+    z-index: 10;
+}
+
+.social-buttons {
+
+    position: fixed;
+    width: 375px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    bottom: 0;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+.social-icons {
+    font-size: 30px;
+    color: white;
+    float: right;
+
+}
+
+.cnHome {
+    width: 60px;
+}
+
+/* information section below */
+
+.row1 {}
+
+.col1 {
+    background-color: rgb(180, 85, 85);
+    height: 200px;
+}
+
+.col2 {
+    background-color: rgb(57, 65, 189);
+    height: 200px;
+}
+
+.col3 {
+    background-color: rgb(43, 163, 59);
+    height: 200px;
+}
+
+.col4 {
+    background-color: rgb(241, 208, 58);
+    height: 200px;
+}
+
+.col5 {
+    background-color: rgb(194, 47, 79);
+    height: 200px;
+}
+
+.col6 {
+    background-color: rgb(53, 100, 231);
+    height: 200px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    svg {
+        width: 100%;
+        height: 100%;
+        padding: 0 0;
+    }
+
+
+    .logOn {
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        margin-top: 50px;
+    }
+
+    .header {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .svgContainer {
+        margin-top: 0;
+    }
+
+    .wrapper {
+        margin-top: 200px;
+    }
+}
