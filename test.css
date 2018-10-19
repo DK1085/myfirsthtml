@@ -32,9 +32,10 @@ body {
     padding-top: 0;
     margin-top:0;
     line-height: 100%;
-    margin-left: -40px;
+    margin-left: -20px;
     opacity: 0.4;
     color: #4466A5;
+    
 }
 
 .wrapper {
@@ -492,7 +493,7 @@ svg {
 
 .row1{
     background-image: url(unnamed.jpg);
-    background-position-y: -230px;
+    background-position-y: 0;
     height: 500px;
     background-size:cover;
     margin-top: -100px;
@@ -501,28 +502,27 @@ svg {
 }
 
 .row2{
-    margin-top: -75px;
-    margin-bottom: 30px;
+    margin-top: -50px;
+    margin-bottom: 0;
 }
-.col2{
-    float: right;
+
+.syllabus{
+    padding-top: 90px;
+    font-family: 'Gilroy-Light';
 }
 
 
-.col3 {
-    height: 200px;
-}
 
 .col4 {
-    height: 200px;
+    height: 300px;
 }
 
 .col5 {
-    height: 200px;
+    height: 300px;
 }
 
 .col6 {
-    height: 200px;
+    height: 300px;
 }
 
 .banner{
@@ -545,7 +545,7 @@ svg {
     color: white;
     margin-top: 0;
     
-    float:right;
+    
        
 }
 
@@ -640,6 +640,17 @@ svg {
         background-size:auto;
         
     }*/
+    
+    .syllabus{
+        padding-top: 0px;
+        margin-top: -200px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .numbers{
+        opacity: 0.2;
+    }
     
 
     
