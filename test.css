@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@font-face{
+    font-family: 'Gilroy-Light';
+    src: url('Gilroy-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    font-weight: bold;
+    src: url('Gilroy-ExtraBold.otf') format('opentype');
+}
 
 html {
     background-color: white;
@@ -15,8 +25,9 @@ body {
     overflow-y: hidden;
 }
 
+
 label {
-    font-family: 'Open Sans';
+    font-family: 'Gilroy-Light';
 }
 
 .wrapper {
@@ -462,31 +473,27 @@ svg {
 }
 
 .cnHome {
-    width: 60px;
+    width: 150px;
 }
 
 /* information section below */
 
+
+
 .row1{
-    margin-top: -100px;
-}
-
-.col1 {
     background-image: url(unnamed.jpg);
-    background-position-y: -220px;
+    background-position-y: -250px;
+    min-height: 300px;
     
-    min-height: 500px;
-    padding-left: 30px;
+    background-size:cover;
+    margin-top: -100px;
+    padding-top: 100px;
     
-    background-size: cover;
-    
-    
+}
+.col2{
+    float: right;
 }
 
-.col2 {
-    background-color: rgb(57, 65, 189);
-    height: 200px;
-}
 
 .col3 {
     background-color: rgb(43, 163, 59);
@@ -511,11 +518,31 @@ svg {
 .banner{
     width: 100%;
     font-size: 600%;
-    font-family: 'Raleway';
+    font-weight: bold;
+    font-family: 'Gilroy-Light';
+    color: white;
+    margin-top: -30px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+   
+       
+}
+
+.banner2{
+    width: 100%;
+    font-size: 175%;
+    font-family: 'Gilroy-Light';
     color: white;
     margin-top: 0;
-    padding-top: 120px;
+    
+    float:right;
        
+}
+
+.notes{
+    color: white;
+    font-size: 120%;
+    font-family: 'Gilroy-Light';
 }
 
 .heading{
@@ -530,7 +557,7 @@ svg {
 
 .tite{
     color: white;
-    font-family: 'Raleway';
+    font-family: 'Gilroy-Light';
     padding-left: 20px;
 }
 @media only screen and (max-width: 768px) {
@@ -567,14 +594,34 @@ svg {
     .banner{
         width: 100%;
         font-size: 300%;
-        font-family: 'Raleway';
+        font-family: 'Gilroy';
         color: white;
         margin-top: 0;
         padding-top: 100px;
         
     }
 
-    .col1 {
+    .banner2{
+        width: 100%;
+        font-size: 150%;
+        font-family: 'Gilroy';
+        color: white;
+        margin-top: 0;
+        padding-bottom: 20px;
+        
+        
+    }
+
+    .row1{
+        background-image: url(unnamed.jpg);
+        background-position-y: -250px;
+        background-position-x: -400px;
+        min-height: 300px;
+        background-size:auto;
+        margin-top: -100px;
+        padding-top: 20px;
+    }
+    /*.col1 {
         background-image: url(unnamed.jpg);
         background-position-y: -250px;
         background-position-x: -400px;
@@ -582,7 +629,12 @@ svg {
         padding-left: 10px;
         background-size:auto;
         
+    }*/
+    
+
+    label{
+        font-size: 180%;
+        font-weight: lighter;
     }
-
-
+    
 }

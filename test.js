@@ -18,6 +18,7 @@ for (let i = 0; i < powerOn.length; i++) {
 
 var letters = document.querySelectorAll(".st0, .st1");
 var powerIcon = document.querySelectorAll(".clickBox, .st2");
+var courseCon = document.querySelectorAll(".courseContent");
 
 var addVisibility = function () {
         for (var i = 0; i < letters.length; i++) {
@@ -27,10 +28,15 @@ var addVisibility = function () {
         for (var j = 0; j < powerIcon.length; j++) {
                 powerIcon[j].classList.toggle("moveAcross");
         }
+        for (let k = 0; k < courseCon.length; k++){
+                courseCon[k].classList.add("hideMe");
+        }
+
 
 
         document.getElementById("logIn").classList.toggle("slide");
         document.getElementById("scroll1").classList.toggle("hideMe");
+        document.getElementById("scroll2").classList.toggle("hideMe");
 
 
 };
