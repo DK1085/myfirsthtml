@@ -104,6 +104,7 @@ var handler = function (e) {
         let wrap = document.getElementById("wrapMe");
         let main = document.getElementById("bod");
         let jumbo = document.getElementById("information");
+        let title = document.getElementById("mastCc");
         let topping = () => {
                 window.addEventListener("scroll", topFunc);
         }
@@ -118,15 +119,17 @@ var handler = function (e) {
                 shape.setAttribute("viewBox", "240 270 800 375");
                 wrap.style.marginTop = "0";
                 wrap.style.height = "100px";
-                svG.style.height = "350px";
+                svG.style.height = "200px";
                 /*svG.style.marginTop = "-220px";*/
                 svgCon.style.zIndex = "2";
-                svgCon.style.height = "200px";
+                svgCon.style.height = "600px";
                 svgCon.style.marginTop = "-100px";
                 jumbo.classList.remove("hideMe");
-                sticky.style.backgroundColor = "#4466A5";
+                title.classList.add("hideMe");
+                sticky.style.backgroundColor = "transparent";
                 topping();
                 main.style.backgroundColor = "#FFFFFF !important";
+                
                 setTimeout(cancelTop, 500);
                 removeEventListener("scroll", handler, false);
 
