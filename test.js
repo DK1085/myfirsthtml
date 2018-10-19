@@ -114,7 +114,7 @@ var handler = function (e) {
 
 
         } else {
-                sticky.style.position = "fixed";
+                sticky.style.position = "absolute";
                 sticky.style.top = "0";
                 shape.setAttribute("viewBox", "240 270 800 375");
                 wrap.style.marginTop = "0";
