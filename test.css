@@ -25,9 +25,16 @@ body {
     overflow-y: hidden;
 }
 
-
-label {
+.numbers{
+    font-size: 2000%;
     font-family: 'Gilroy-Light';
+    font-weight: bold;
+    padding-top: 0;
+    margin-top:0;
+    line-height: 100%;
+    margin-left: -40px;
+    opacity: 0.4;
+    color: #4466A5;
 }
 
 .wrapper {
@@ -299,6 +306,9 @@ label {
     padding: 0 0;
     margin: 0 0;
 }
+.lab{
+    font-family: 'Gilroy-Light';
+}
 
 .svgContainer {
     background-color: black;
@@ -482,13 +492,17 @@ svg {
 
 .row1{
     background-image: url(unnamed.jpg);
-    background-position-y: -250px;
-    min-height: 300px;
-    
+    background-position-y: -230px;
+    height: 500px;
     background-size:cover;
     margin-top: -100px;
     padding-top: 100px;
     
+}
+
+.row2{
+    margin-top: -75px;
+    margin-bottom: 30px;
 }
 .col2{
     float: right;
@@ -496,22 +510,18 @@ svg {
 
 
 .col3 {
-    background-color: rgb(43, 163, 59);
     height: 200px;
 }
 
 .col4 {
-    background-color: rgb(241, 208, 58);
     height: 200px;
 }
 
 .col5 {
-    background-color: rgb(194, 47, 79);
     height: 200px;
 }
 
 .col6 {
-    background-color: rgb(53, 100, 231);
     height: 200px;
 }
 
@@ -616,7 +626,7 @@ svg {
         background-image: url(unnamed.jpg);
         background-position-y: -250px;
         background-position-x: -400px;
-        min-height: 300px;
+        min-height: 500px;
         background-size:auto;
         margin-top: -100px;
         padding-top: 20px;
@@ -632,9 +642,5 @@ svg {
     }*/
     
 
-    label{
-        font-size: 180%;
-        font-weight: lighter;
-    }
     
 }

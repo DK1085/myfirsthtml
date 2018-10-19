@@ -56,6 +56,7 @@ var letters2 = document.querySelectorAll(".st3");
 var scroller = document.getElementById("scroll1");
 var bracketC = document.querySelectorAll(".st5");
 var nBracket = document.querySelectorAll(".st6");
+var scroller2 = document.getElementById("scroll2");
 
 
 // reset the transition by...
@@ -134,6 +135,8 @@ var handler = function (e) {
                 title.classList.add("hideMe");
                 sticky.style.backgroundColor = "transparent";
                 topping();
+                document.getElementById("scroll1").classList.toggle("hideMe");
+                document.getElementById("scroll2").classList.toggle("hideMe");
                 main.style.backgroundColor = "#FFFFFF !important";
                 
                 setTimeout(cancelTop, 500);
