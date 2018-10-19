@@ -132,6 +132,8 @@ var handler = function (e) {
                 
                 setTimeout(cancelTop, 500);
                 removeEventListener("scroll", handler, false);
+                
+
 
         };
 
