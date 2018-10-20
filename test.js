@@ -112,6 +112,7 @@ var handler = function (e) {
         let main = document.getElementById("bod");
         let jumbo = document.getElementById("information");
         let title = document.getElementById("mastCc");
+        var menu = document.getElementById("hamburgerMenu");
         let topping = () => {
                 window.addEventListener("scroll", topFunc);
         }
@@ -138,7 +139,7 @@ var handler = function (e) {
                 document.getElementById("scroll1").classList.toggle("hideMe");
                 document.getElementById("scroll2").classList.toggle("hideMe");
                 main.style.backgroundColor = "#FFFFFF !important";
-                
+                menu.classList.remove("hideMe");
                 setTimeout(cancelTop, 500);
                 removeEventListener("scroll", handler, false);
                 
@@ -158,3 +159,25 @@ var topFunc = function topFunction() {
 var cancelTop = () => {
         removeEventListener("scroll", topFunc, false);
 }
+
+var hamMenu = document.getElementById("hamburgerMenu");
+var tagLine1 = document.getElementById("intro1");
+var tagLine2 = document.getElementById("intro2");
+var tagLine3 = document.getElementById("intro3");
+
+hamMenu.addEventListener("click", function(){
+        hamMenu.classList.toggle("is-active");
+
+        // animated out (and back in) the tagline text
+
+        tagLine1.classList.toggle("bounceInLeft");
+        tagLine1.classList.toggle("slideOutLeft");
+
+        setTimeout(function(){tagLine2.classList.toggle("bounceInLeft");
+        tagLine2.classList.toggle("slideOutLeft");}, 100);
+
+        setTimeout(function(){tagLine3.classList.toggle("bounceInLeft");
+        tagLine3.classList.toggle("slideOutLeft");}, 300);
+
+       
+});

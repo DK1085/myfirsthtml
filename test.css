@@ -79,10 +79,17 @@ body {
     transform: translateX(27%);
 }
 
-
+.hammy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    margin-top: 20px !important;
+    margin-left: 20px !important;
+}
 
 .hideMe {
-    display: none;
+    display: none !important;
 }
 
 .clickBox {
@@ -502,8 +509,13 @@ svg {
 }
 
 .row2{
-    margin-top: -50px;
+    margin-top: -60px;
     margin-bottom: 0;
+    height: auto;
+}
+
+.row3{
+    
 }
 
 .syllabus{
@@ -511,18 +523,35 @@ svg {
     font-family: 'Gilroy-Light';
 }
 
-
+.col2{
+    margin-top: 70px;
+}
 
 .col4 {
-    height: 300px;
+    max-height: 300px;
 }
 
 .col5 {
-    height: 300px;
+    max-height: 300px;
 }
 
 .col6 {
     height: 300px;
+    
+}
+.col7 {
+    height: 300px;
+    
+}
+
+.col8 {
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.col9 {
+    height: 300px;
+    margin-bottom: 40px;
 }
 
 .banner{
@@ -533,7 +562,7 @@ svg {
     color: white;
     margin-top: -30px;
     padding-left: 20px;
-    padding-bottom: 50px;
+    
    
        
 }
@@ -569,6 +598,10 @@ svg {
     color: white;
     font-family: 'Gilroy-Light';
     padding-left: 20px;
+}
+
+.col1{
+    margin-top: 80px;
 }
 @media only screen and (max-width: 768px) {
     svg {
@@ -606,9 +639,7 @@ svg {
         font-size: 300%;
         font-family: 'Gilroy';
         color: white;
-        margin-top: 0;
-        padding-top: 100px;
-        
+        margin-top: -10px;
     }
 
     .banner2{
@@ -626,10 +657,20 @@ svg {
         background-image: url(unnamed.jpg);
         background-position-y: -250px;
         background-position-x: -400px;
-        min-height: 500px;
+        height: auto;
         background-size:auto;
         margin-top: -100px;
         padding-top: 20px;
+        
+    }
+
+    .col1{
+        margin-bottom: 60px;
+        padding-top: 20px;
+    }
+
+    .col2{
+        margin-bottom: 30px;
     }
     /*.col1 {
         background-image: url(unnamed.jpg);
@@ -643,13 +684,14 @@ svg {
     
     .syllabus{
         padding-top: 0px;
-        margin-top: -200px;
-        padding-left: 20px;
+        margin-top: -220px;
+        padding-left: 40px;
         padding-right: 20px;
     }
 
     .numbers{
         opacity: 0.2;
+        
     }
     
 
