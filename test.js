@@ -164,20 +164,44 @@ var hamMenu = document.getElementById("hamburgerMenu");
 var tagLine1 = document.getElementById("intro1");
 var tagLine2 = document.getElementById("intro2");
 var tagLine3 = document.getElementById("intro3");
+var men1 = document.getElementById("menu1");
+var men2 = document.getElementById("menu2");
+var men3 = document.getElementById("menu3");
+var men4 = document.getElementById("menu4");
+var men5 = document.getElementById("menu5");
+var men6 = document.getElementById("menu6");
+
 
 hamMenu.addEventListener("click", function(){
         hamMenu.classList.toggle("is-active");
 
         // animated out (and back in) the tagline text
 
-        tagLine1.classList.toggle("bounceInLeft");
+        tagLine1.classList.toggle("bounceInRight");
         tagLine1.classList.toggle("slideOutLeft");
 
-        setTimeout(function(){tagLine2.classList.toggle("bounceInLeft");
+        setTimeout(function(){tagLine2.classList.toggle("bounceInRight");
         tagLine2.classList.toggle("slideOutLeft");}, 100);
 
-        setTimeout(function(){tagLine3.classList.toggle("bounceInLeft");
+        setTimeout(function(){tagLine3.classList.toggle("bounceInRight");
         tagLine3.classList.toggle("slideOutLeft");}, 300);
+
+        
+
+        setTimeout(function(){men2.classList.toggle("slideOutLeft");
+        men2.classList.toggle("bounceInRight");},50);
+
+        setTimeout(function(){men3.classList.toggle("slideOutLeft");
+        men3.classList.toggle("bounceInRight");},100);
+
+        setTimeout(function(){men4.classList.toggle("slideOutLeft");
+        men4.classList.toggle("bounceInRight");},150);
+
+        setTimeout(function(){men5.classList.toggle("slideOutLeft");
+        men5.classList.toggle("bounceInRight");},200);
+
+        
 
        
 });
+
