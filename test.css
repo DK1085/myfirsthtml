@@ -21,6 +21,18 @@ body {
 
 }
 
+.main{
+    padding-top: 100px;
+}
+
+.cnLogo{
+    height: 55px;
+    position: absolute;
+    z-index: 10;
+    margin-top: -80px;
+    margin-left: -70px;;
+}
+
 .hideScroll {
     overflow-y: hidden;
 }
@@ -632,6 +644,14 @@ a:hover{
 .col1{
     margin-top: 40px;
 }
+
+@media only screen and (max-width: 2400px) {
+.wrapper{
+    height: 2000px;
+}
+
+}
+
 @media only screen and (max-width: 768px) {
     svg {
         width: 100%;
