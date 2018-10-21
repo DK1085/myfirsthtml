@@ -142,6 +142,7 @@ var handler = function (e) {
                 document.getElementById("scroll2").classList.toggle("hideMe");
                 main.style.backgroundColor = "#FFFFFF !important";
                 menu.classList.remove("hideMe");
+                history.pushState(stateObj, "page 2", "main.html");
                 setTimeout(cancelTop, 500);
                 removeEventListener("scroll", handler, false);
                 
@@ -150,6 +151,9 @@ var handler = function (e) {
         };
 
 };
+
+var stateObj = { foo: "bar" };
+
 
 addEventListener("scroll", handler, false);
 
