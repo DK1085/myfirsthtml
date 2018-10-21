@@ -113,6 +113,7 @@ var handler = function (e) {
         let jumbo = document.getElementById("information");
         let title = document.getElementById("mastCc");
         var menu = document.getElementById("hamburgerMenu");
+        let heady = document.getElementById("heading");
         let topping = () => {
                 window.addEventListener("scroll", topFunc);
         }
@@ -125,11 +126,12 @@ var handler = function (e) {
                 sticky.style.position = "absolute";
                 sticky.style.top = "0";
                 shape.setAttribute("viewBox", "240 270 800 375");
+                heading.style.zIndex = "0";
                 wrap.style.marginTop = "0";
                 wrap.style.height = "100px";
                 svG.style.height = "200px";
                 /*svG.style.marginTop = "-220px";*/
-                svgCon.style.zIndex = "2";
+                svgCon.style.zIndex = "none";
                 svgCon.style.height = "600px";
                 svgCon.style.marginTop = "-100px";
                 jumbo.classList.remove("hideMe");
@@ -200,8 +202,5 @@ hamMenu.addEventListener("click", function(){
         setTimeout(function(){men5.classList.toggle("slideOutLeft");
         men5.classList.toggle("bounceInRight");},200);
 
-        
-
-       
 });
 

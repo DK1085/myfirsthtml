@@ -568,7 +568,7 @@ svg {
     margin-top: -90px;
     width: 100%;
     font-size: 400%;
-    
+    font-weight: bold;
     font-family: 'Gilroy-Light';
     color: white;
     line-height: 10px;
@@ -586,6 +586,15 @@ svg {
     color: burlywood;
 }
 
+a {
+    color: white !important;
+
+}
+
+a:hover{
+    color: lightgreen !important;
+    text-decoration: none !important;
+}
 
 .banner2{
     width: 100%;
@@ -718,7 +727,7 @@ svg {
     margin-top: -55px;
     width: 100%;
     font-size: 200%;
-    
+    font-weight: bold;
     font-family: 'Gilroy-Light';
     color: white;
     line-height: 10px;
