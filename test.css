@@ -513,42 +513,53 @@ svg {
 
 /* information section below */
 
-
+#rowOne{
+    margin-top: -100px !important;
+}
 
 .row1{
     background-image: url(unnamed.jpg);
     background-position-y: 0;
     height: 500px;
     background-size:cover;
-    margin-top: -100px;
+    margin-top: 100px;
     padding-top: 100px;
     
 }
 
 .row2{
-    margin-top: -100px;
+    margin-top: -80px;
     margin-bottom: 0;
     height: auto;
 }
 
 .row3{
-    margin-top: -80px;
+    margin-top: 30px;
 }
 
 
 
 .syllabus{
-    padding-top: 120px;
+    padding-top: 100px;
     font-family: 'Gilroy-Light';
+    margin-left: -80px;
+    font-size: 120%;
+    color: #234380 !important;
 }
 
 .syllabus1{
     margin-top: -170px;
     position: relative;
     font-family: 'Gilroy-Light';
-    padding-left: 100px;
+    padding-left: 50px;
     z-index: 5px;
+    font-size: 120%;
+    color: #234380 !important;
     
+}
+
+.info1{
+    margin-top: -220px !important;
 }
 
 
@@ -572,12 +583,19 @@ svg {
 
 .banner{
     width: 100%;
-    font-size: 600%;
+    font-size: 800%;
     font-weight: bold;
     font-family: 'Gilroy-Light';
     color: white;
-    margin-top: -20px;
-    padding-left: 20px;   
+    margin-top: -40px;
+    padding-left: 20px;  
+}
+#intro1{
+    padding-top: 50px;
+}
+
+.menu6{
+    margin-top: -80px;
 }
 
 .banner3{
@@ -608,7 +626,7 @@ a {
 }
 
 a:hover{
-    color: lightgreen !important;
+    color: #1DABA4 !important;
     text-decoration: none !important;
 }
 
@@ -619,8 +637,6 @@ a:hover{
     color: white;
     margin-top: 0;
     
-    
-       
 }
 
 .notes{
@@ -655,7 +671,29 @@ a:hover{
 }
 
 }
+@media only screen and (max-width: 1200px) {
 
+.numbers{
+    font-size: 2000%;
+    font-family: 'Gilroy-Light';
+    font-weight: bold;
+    padding-top: 0;
+    margin-top:50px;
+    line-height: 100%;
+    margin-left: 0;
+    opacity: 0.4;
+    color:#F6B32E;}
+
+    .menu6{
+        margin-top: 50px;
+    }
+
+    .banner{
+        font-size: 600%;
+    }
+
+   
+}
 @media only screen and (max-width: 768px) {
     svg {
         width: 100%;
@@ -663,6 +701,9 @@ a:hover{
         padding: 0 0;
     }
 
+    .menu6{
+        margin-top: -50px;
+    }
 
     .logOn {
         width: 90%;
@@ -689,7 +730,7 @@ a:hover{
 
     .banner{
         width: 100%;
-        font-size: 300%;
+        font-size: 400%;
         font-family: 'Gilroy';
         color: white;
         margin-top: 10px;
@@ -708,11 +749,11 @@ a:hover{
 
     .row1{
         background-image: url(unnamed.jpg);
-        background-position-y: -250px;
+        background-position-y: -140px;
         background-position-x: -400px;
         height: auto;
         background-size:auto;
-        margin-top: -100px;
+        
         padding-top: 20px;
         
     }
@@ -737,9 +778,10 @@ a:hover{
     
     .syllabus{
         padding-top: 0px;
-        margin-top: -220px;
+        margin-top: -230px;
         padding-left: 40px;
         padding-right: 20px;
+        margin-left: 30px;
     }
 
     .numbers{
@@ -779,9 +821,10 @@ a:hover{
 }
 
 .syllabus1{
-    margin-top: -150px;
+    margin-top: -200px;
     font-family: 'Gilroy-Light';
     padding-left: 30px;
+    
 }
     
 }
