@@ -49,6 +49,11 @@ body {
     color:#F6B32E;
     
 }
+.numbers2{
+    opacity: 0.4;
+    margin-bottom: -30px;
+    margin-left: -10px;
+}
 
 .wrapper {
     background-color: black;
@@ -538,10 +543,14 @@ svg {
 }
 
 .syllabus1{
-    margin-top: -200px;
+    margin-top: -170px;
+    position: relative;
     font-family: 'Gilroy-Light';
     padding-left: 100px;
+    z-index: 5px;
+    
 }
+
 
 
 .col2{
@@ -735,8 +744,15 @@ a:hover{
 
     .numbers{
         opacity: 0.2;
-        
-        
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+
+    .numbers2{
+        opacity: 0.2;
+        margin-bottom: -30px;
+        margin-top: -30px;
+        margin-left: -50px;
     }
     
     .banner3{
@@ -754,9 +770,19 @@ a:hover{
     margin-top: 150px;
 }
 .row2{
-    margin-top: -30px;
-    margin-bottom: 0;
+    
     height: auto;
+}
+
+.row3{
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.syllabus1{
+    margin-top: -150px;
+    font-family: 'Gilroy-Light';
+    padding-left: 30px;
 }
     
 }
